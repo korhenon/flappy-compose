@@ -18,6 +18,6 @@ fun NavGraph(modifier: Modifier = Modifier) {
     NavHost(navController = navController, startDestination = Home, modifier = modifier) {
         composable<Home> { HomeScreen(navController = navController) }
         composable<CharacterSelect> { CharacterSelectScreen(navController = navController) }
-        composable<Game> { GameScreen() }
+        composable<Game> { GameScreen(navController = navController) }
     }
 }

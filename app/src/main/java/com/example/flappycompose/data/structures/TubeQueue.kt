@@ -13,7 +13,7 @@ class TubeQueue {
         return list[index]
     }
 
-    fun moveTubes(distance: Int) {
+    fun moveTubes(distance: Float) {
         list = list.map { it.copy(x = it.x - distance) }.toMutableList()
     }
 

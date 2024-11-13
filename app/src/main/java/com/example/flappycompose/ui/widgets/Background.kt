@@ -12,7 +12,7 @@ import androidx.compose.ui.res.painterResource
 import com.example.flappycompose.R
 
 @Composable
-fun MenuBackground() {
+fun Background() {
     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.BottomEnd) {
         Image(
             painter = painterResource(id = R.drawable.background),

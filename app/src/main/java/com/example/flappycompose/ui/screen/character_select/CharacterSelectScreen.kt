@@ -12,7 +12,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.IconButtonDefaults
-import androidx.compose.material3.IconToggleButton
 import androidx.compose.material3.MaterialTheme.colorScheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -28,15 +27,14 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.example.flappycompose.R
 import com.example.flappycompose.domain.Characters
-import com.example.flappycompose.ui.navigation.destinations.Home
-import com.example.flappycompose.ui.widgets.MenuBackground
+import com.example.flappycompose.ui.widgets.Background
 
 @Composable
 fun CharacterSelectScreen(
     navController: NavController,
     viewModel: CharacterSelectViewModel = hiltViewModel()
 ) {
-    MenuBackground()
+    Background()
     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
             Text(
